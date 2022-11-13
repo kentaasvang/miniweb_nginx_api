@@ -1,12 +1,14 @@
 #!./venv/bin/python
 from flask import Flask
+import nginx
+
 
 def create_app():
 
     app = Flask(__name__)
 
     @app.route("/")
-    def get_nginx_blocks():
+    def create_server_block():
         return {"blocks": ["asvang.no", "kentmartin.net"]}
 
     return app
