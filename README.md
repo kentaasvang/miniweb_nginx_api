@@ -1,6 +1,7 @@
-# 🆕 My Project
+# 🆕 miniweb_nginx_api
 
-## ❓ What is My Project?
+## ❓ Simple REST-API
+Simple CRUD-operations on nginx server-blocks 
 
 ## ⚡ Getting Started
 
@@ -9,5 +10,3 @@
 ### 🔨 Build the Project
 
 ### ▶ Running and Settings
-
-## 🤝 Collaborate with My Project
