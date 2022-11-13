@@ -1,6 +1,7 @@
 #!./venv/bin/python
 from flask import Flask
 import nginx
+from database import database
 
 
 def create_app():
@@ -9,7 +10,8 @@ def create_app():
 
     @app.route("/")
     def create_server_block():
-        return {"blocks": ["asvang.no", "kentmartin.net"]}
+        server_blocks = database.get_server_blocks()
+        return {"server_blocks": server_blocks}
 
     return app
 

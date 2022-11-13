@@ -1,1 +1,1 @@
-sqlite3 src/database/app.db < src/database/schema.sql
+sqlite3 app.db < schema.sql
